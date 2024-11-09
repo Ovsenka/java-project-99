@@ -37,3 +37,7 @@ tasks.jacocoTestReport {
 		xml.required = true
 	}
 }
+
+application {
+	mainClass.set("hexlet.code.app")
+}
