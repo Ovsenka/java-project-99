@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${JDBC_DATABASE_URL}
+    username: ${USERNAME}
+    password: ${PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+sentry:
+  logging:
+    minimum-event-level: info
+    minimum-breadcrumb-level: debug
+  dsn: "https://gdg4b4aa4ba193b8e15499a544fe6e9d@o7809133175066624.ingest.de.sentry.io/3494133200298064"
+  # Set traces_sample_rate to 1.0 to capture 100%
+  # of transactions for tracing.
+  # We recommend adjusting this value in production.
+  tracesSampleRate: 1.0

@@ -1,4 +1,4 @@
-package hexlet.code.app.model;
+package hexlet.code.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
@@ -30,7 +30,7 @@ import java.util.Collection;
 @Getter
 @Setter
 @ToString(onlyExplicitlyIncluded = true)
-public class User implements UserDetails {
+public class User implements UserDetails, BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

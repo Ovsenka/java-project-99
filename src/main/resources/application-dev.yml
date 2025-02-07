@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: "jdbc:h2:mem:springdb;DB_CLOSE_DELAY=-1"
+    username: "dev"
+    password: "spring"
+    driverClassName: org.h2.Driver
+  h2:
+    console.enabled: true

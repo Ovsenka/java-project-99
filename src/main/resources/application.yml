@@ -1,0 +1,37 @@
+---
+
+spring:
+  application:
+    name: app
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  output:
+    ansi:
+      enabled: always
+  profiles:
+    default: "dev"
+
+server:
+  port: 8089
+
+logging:
+  level:
+    root: DEBUG
+    org:
+      springframework:
+        # web: DEBUG
+        security: DEBUG
+
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
+
+springdoc:
+  api-docs:
+    path: /swagger/api-docs
+  swagger-ui:
+    path: /swagger/swagger-ui.html
+
